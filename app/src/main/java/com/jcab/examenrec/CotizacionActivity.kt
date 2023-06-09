@@ -19,6 +19,7 @@ class CotizacionActivity : AppCompatActivity() {
     private lateinit var rb36 : RadioButton
     private lateinit var rb18 : RadioButton
     private lateinit var lblResultado : TextView
+    private lateinit var lblName : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +36,19 @@ class CotizacionActivity : AppCompatActivity() {
         rb18 = findViewById(R.id.rb18)
         rb36 = findViewById(R.id.rb36)
         lblResultado = findViewById(R.id.lblResultado)
+        lblName = findViewById(R.id.lblName)
 
+        lblName.text = lblName.text.toString() + intent.getStringExtra("nombre")
+        btnLimpiar.setOnClickListener{
+            txtPago.text = null;
+            txtValor.text = null;
+            txtDescripcion.text = null;
+            lblResultado.text = null;
+        }
+
+        btnRegresar.setOnClickListener {
+            finish()
+        }
 
     }
 }
