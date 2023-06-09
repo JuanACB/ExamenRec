@@ -62,7 +62,7 @@ class CotizacionActivity : AppCompatActivity() {
                 cotizacion = Cotizacion(txtValor.text.toString().toInt(),24, txtValor.text.toString().toFloat());
             if (rb36.isChecked)
                 cotizacion = Cotizacion(txtValor.text.toString().toInt(),36, txtValor.text.toString().toFloat());
-            lblResultado.text = "Pago Mensual : "+cotizacion.calcularPagoMesnsual().toString();
+            lblResultado.text = "Pago Mensual : "+ String.format("%.2f", cotizacion.calcularPagoMesnsual());
         }
 
     }
