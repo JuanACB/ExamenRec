@@ -5,6 +5,9 @@ public class Cotizacion {
     private float valorAuto,porEncganche;
     private String Descripcion;
 
+    Cotizacion(){
+
+    }
     Cotizacion( int a, int b, float c){
         plazo = b;
         valorAuto = a;
@@ -12,7 +15,7 @@ public class Cotizacion {
     }
 
     public int generarFolio(){
-        return 0;
+        return (int)(Math. random()*10+1);
     }
 
     public float calcularEnganche(){

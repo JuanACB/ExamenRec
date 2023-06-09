@@ -20,7 +20,8 @@ class CotizacionActivity : AppCompatActivity() {
     private lateinit var rb18 : RadioButton
     private lateinit var lblResultado : TextView
     private lateinit var lblName : TextView
-    private lateinit var cotizacion : Cotizacion;
+    private lateinit var lblFolio : TextView
+    private  var cotizacion = Cotizacion();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,8 +39,10 @@ class CotizacionActivity : AppCompatActivity() {
         rb36 = findViewById(R.id.rb36)
         lblResultado = findViewById(R.id.lblResultado)
         lblName = findViewById(R.id.lblName)
+        lblFolio = findViewById(R.id.lblFolio)
 
         lblName.text = lblName.text.toString() + intent.getStringExtra("nombre")
+        lblFolio.text = lblFolio.text.toString() + cotizacion.generarFolio().toString();
         btnLimpiar.setOnClickListener{
             txtPago.text = null;
             txtValor.text = null;
