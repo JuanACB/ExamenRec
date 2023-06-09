@@ -21,10 +21,10 @@
             android:textSize="18dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/lblFolio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Folio :" />
 
         <EditText
             android:id="@+id/txtDescripcion"
@@ -90,6 +90,7 @@
             android:id="@+id/lblResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Pago Mensual : "
             android:textSize="20dp" />
 
         <Button

@@ -44,7 +44,7 @@ class CotizacionActivity : AppCompatActivity() {
             txtPago.text = null;
             txtValor.text = null;
             txtDescripcion.text = null;
-            lblResultado.text = null;
+            lblResultado.text = "Pago Mensual : ";
         }
 
         btnRegresar.setOnClickListener {
@@ -59,7 +59,7 @@ class CotizacionActivity : AppCompatActivity() {
                 cotizacion = Cotizacion(txtValor.text.toString().toInt(),24, txtValor.text.toString().toFloat());
             if (rb36.isChecked)
                 cotizacion = Cotizacion(txtValor.text.toString().toInt(),36, txtValor.text.toString().toFloat());
-            lblResultado.text = lblResultado.text.toString() +cotizacion.calcularPagoMesnsual();
+            lblResultado.text = "Pago Mensual : "+cotizacion.calcularPagoMesnsual().toString();
         }
 
     }

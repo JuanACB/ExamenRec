@@ -6,7 +6,9 @@ public class Cotizacion {
     private String Descripcion;
 
     Cotizacion( int a, int b, float c){
-
+        plazo = b;
+        valorAuto = a;
+        porEncganche = c;
     }
 
     public int generarFolio(){
