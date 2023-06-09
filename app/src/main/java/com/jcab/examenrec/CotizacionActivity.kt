@@ -20,6 +20,7 @@ class CotizacionActivity : AppCompatActivity() {
     private lateinit var rb18 : RadioButton
     private lateinit var lblResultado : TextView
     private lateinit var lblName : TextView
+    private lateinit var cotizacion : Cotizacion;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +49,17 @@ class CotizacionActivity : AppCompatActivity() {
 
         btnRegresar.setOnClickListener {
             finish()
+        }
+        btnCalcular.setOnClickListener {
+            if (rb12.isChecked)
+                cotizacion = Cotizacion(txtValor.text.toString().toInt(),12, txtValor.text.toString().toFloat());
+            if (rb18.isChecked)
+                cotizacion = Cotizacion(txtValor.text.toString().toInt(),18, txtValor.text.toString().toFloat());
+            if (rb24.isChecked)
+                cotizacion = Cotizacion(txtValor.text.toString().toInt(),24, txtValor.text.toString().toFloat());
+            if (rb36.isChecked)
+                cotizacion = Cotizacion(txtValor.text.toString().toInt(),36, txtValor.text.toString().toFloat());
+            lblResultado.text = lblResultado.text.toString() +cotizacion.calcularPagoMesnsual();
         }
 
     }

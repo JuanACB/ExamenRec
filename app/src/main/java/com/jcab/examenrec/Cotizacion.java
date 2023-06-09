@@ -5,7 +5,7 @@ public class Cotizacion {
     private float valorAuto,porEncganche;
     private String Descripcion;
 
-    Cotizacion(){
+    Cotizacion( int a, int b, float c){
 
     }
 
