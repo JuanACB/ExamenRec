@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnCotizar = findViewById(R.id.btnCotizar)
+        txtName = findViewById(R.id.txtName)
+
         btnCotizar.setOnClickListener {
             if (txtName.text.toString() == "") {
                 Toast.makeText(this, "Favor de ingresar un nombre", Toast.LENGTH_SHORT).show()

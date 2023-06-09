@@ -17,7 +17,8 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -26,7 +27,7 @@
             android:text="TextView" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/txtDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -34,7 +35,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/txtValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,7 +43,7 @@
             android:inputType="number|numberDecimal" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/txtPago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -60,25 +61,25 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rb12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="12 meses" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rb18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="18meses" />
+                android:text="18 meses" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rb24"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="24 meses" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/rb36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="36 meses" />
@@ -86,25 +87,25 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/lblResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnLimpiar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Limpiar" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnRegresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Regresar" />
