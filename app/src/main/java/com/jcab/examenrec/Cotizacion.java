@@ -13,12 +13,12 @@ public class Cotizacion {
         return 0;
     }
 
-    public void calcularEnganche(){
-
+    public float calcularEnganche(){
+        return (porEncganche/100)*valorAuto;
     }
 
     public float calcularPagoMesnsual(){
-        return 0;
+        return calcularEnganche()/plazo;
     }
 
 }

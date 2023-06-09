@@ -17,7 +17,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/Ford_logo_flat" />
+            app:srcCompat="@drawable/ford_logo_flat" />
 
         <TextView
             android:id="@+id/textView2"
